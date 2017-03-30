@@ -35,7 +35,7 @@ exports.agregaPelicula = function(req, res) {
         if(err){
             return res.status(500).send( err.message);
         }else {
-            res.status(200).jsonp(datos);
+            return res.status(200).jsonp(datos);
         }
     });
 };
